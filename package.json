@@ -1,0 +1,24 @@
+{
+    "name": "node-cn-ipbc-hash",
+    "version": "0.0.1",
+    "main": "cryptonote",
+    "contributors": [
+        {
+            "name": "IPBC-Dev",
+            "email": "hello@ipbc.io",
+            "url": "https://github.com/ipbc-dev/"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ipbc-dev/node-cn-ipbc-hash.git"
+    },
+    "dependencies": {
+        "bindings": "*",
+        "nan": "^2.10.0"
+    },
+    "keywords": [
+        "cryptonight",
+        "cryptonote"
+    ]
+}

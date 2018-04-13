@@ -1,0 +1,38 @@
+{
+    "targets": [
+        {
+            "target_name": "cryptonote",
+            "sources": [
+                "src/main.cpp",
+                "src/crypto/crypto.cpp",
+                "src/crypto/crypto-ops.c",
+                "src/crypto/crypto-ops-data.c",
+                "src/crypto/hash.c",
+                "src/crypto/keccak.c",
+                "src/crypto/blake256.c",
+                "src/crypto/hash-extra-blake.c",
+                "src/crypto/groestl.c",
+                "src/crypto/hash-extra-groestl.c",
+                "src/crypto/jh.c",
+                "src/crypto/hash-extra-jh.c",
+                "src/crypto/skein.c",
+                "src/crypto/hash-extra-skein.c",
+                "src/crypto/slow-hash2.cpp",
+                "src/crypto/slow-hash.c",
+                "src/crypto/random.c",
+                "src/crypto/oaes_lib.c",
+                "src/common/base58.cpp",
+            ],
+            "include_dirs": [
+                "src",
+                "<!(node -e \"require('nan')\")",
+            ],
+            "cflags_cc!": [ "-fno-exceptions", "-fno-rtti" ],
+            "cflags_cc": [
+                  "-std=c++0x",
+                  "-fexceptions",
+                  "-frtti",
+            ],
+        }
+    ]
+}
