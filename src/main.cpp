@@ -6,7 +6,7 @@
 #include <string>
 #include <algorithm>
 #include "crypto/crypto.h"
-#include "common/base58.h"
+#include "Common/Base58.h"
 
 #include <nan.h>
 
