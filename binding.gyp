@@ -27,11 +27,11 @@
                 "src",
                 "<!(node -e \"require('nan')\")",
             ],
-            "cflags_cc!": [ "-fno-exceptions", "-fno-rtti" ],
+            "cflags_c": [
+                "-std=gnu11 -march=native -fPIC -m64"
+            ],
             "cflags_cc": [
-                  "-std=c++0x",
-                  "-fexceptions",
-                  "-frtti",
+                "-std=gnu++11 -fPIC -m64"
             ],
         }
     ]
