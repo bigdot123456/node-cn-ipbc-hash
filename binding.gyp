@@ -21,7 +21,7 @@
                 "src/crypto/slow-hash.c",
                 "src/crypto/random.c",
                 "src/crypto/oaes_lib.c",
-                "src/common/base58.cpp",
+                "src/Common/Base58.cpp",
             ],
             "include_dirs": [
                 "src",
